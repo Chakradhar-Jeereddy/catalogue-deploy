@@ -11,7 +11,7 @@ def configMap = [
     project: "roboshop",
     component: "catalogue",
     acc_id: "406682759639",
-    region: "us-east-1"
+    region: "us-east-1",
     appVersion: (params.appVersion),
     deploy_to: (params.deploy_to)
 ]
