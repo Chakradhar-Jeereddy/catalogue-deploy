@@ -10,6 +10,7 @@ properties([
 def configMap = [
     project: "roboshop",
     component: "catalogue",
+    ACC_ID: "406682759639",
     appVersion: (params.appVersion),
     deploy_to: (params.deploy_to)
 ]

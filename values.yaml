@@ -1,5 +1,5 @@
 deployment:
-  imageRepo: joindevops/catalogue
+  imageRepo: chakradhar05/catalogue
   imageVersion: v1
 service:
   servicePort: 8080 # default value
