@@ -1,5 +1,5 @@
-apiVersion: v2
+apiVersion: v2 # This is char version
 name: catalogue # chart name
 version:  1.0.0 # chart version
 description: catalogue installation
-appVersion: v1 # this is application version
+appVersion: v1 # This is application version
