@@ -7,7 +7,7 @@ properties([
   ])
 ])
 
-def configMap = [
+def mymap = [
     project: "roboshop",
     component: "catalogue",
     acc_id: "406682759639",
