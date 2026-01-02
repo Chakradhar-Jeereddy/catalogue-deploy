@@ -15,3 +15,26 @@ aws eks update-cluster-config --name roboshop-dev --resources-vpc-config endpoin
 Use the same parameters
 ==
 - Install the rebuilder plugin to reuse the same parameter.
+
+Catalogue-CI -> Catalogue-deploy -> Jenkins-library
+==
+- Build once and run anywhere
+- If first time, it will take install, otherwise it will upgrade
+- helm upgrade --install $component -f values-$deploy_to.yaml -n $project
+- Failures can be
+   - Build errors
+   - Scanning related errors
+   - Testing related errors
+   - Deployment related errors
+
+  - We are following multiple strategies to make our applications stable and defect free.
+  * Shift left
+  * DevSecOps
+  * Build once and run anywhere
+
+Deployments
+==
+- Create one multibranch repo for all backends
+- Clone the repo databases-k8s and manually deploy the four databases.
+- Now launch pipelines
+- 
