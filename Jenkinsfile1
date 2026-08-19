@@ -18,4 +18,4 @@ def inputs = [
     deploy_to: (params.deploy_to)
 ]
 
-EKSDeploy(inputs)
+eksdeploy(inputs)
