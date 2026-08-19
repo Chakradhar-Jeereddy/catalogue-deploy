@@ -1,0 +1,21 @@
+@Library('shared-pipeline') _
+
+// search jenkins properties parameters
+properties([
+  parameters([
+    string(name: 'appVersion', defaultValue: ''),
+    string(name: 'deploy_to', defaultValue: 'dev')
+  ])
+])
+
+
+def inputs = [
+    project: "roboshop",
+    component: "catalogue",
+    acc_id: "406682759639",
+    region: "us-east-1",
+    appVersion: (params.appVersion),
+    deploy_to: (params.deploy_to)
+]
+
+EKSDeploy(inputs)
